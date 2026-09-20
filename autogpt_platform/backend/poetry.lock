@@ -7436,19 +7436,22 @@ test = ["pylint", "pytest", "pytest-black", "pytest-cov", "pytest-pylint"]
 
 [[package]]
 name = "stripe"
-version = "11.6.0"
+version = "15.6.1"
 description = "Python bindings for the Stripe API"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "stripe-11.6.0-py2.py3-none-any.whl", hash = "sha256:6e6cf09ebb6d5fc2d708401cb8868fd7bff987a6d09a0433caaa92c62f97dbc5"},
-    {file = "stripe-11.6.0.tar.gz", hash = "sha256:0ced7cce23a6cb1a393c86a1f7f9435c9d83ae7cbd556362868caf62cb44a92c"},
+    {file = "stripe-15.6.1-py3-none-any.whl", hash = "sha256:b33e1ea76462d7289e5fe755a1132b82099151bfb31e961021655471e6d216bf"},
+    {file = "stripe-15.6.1.tar.gz", hash = "sha256:9f3986aa960419041aba9c76191746bdf2c342c95892acfbf6edb500ab006d31"},
 ]
 
 [package.dependencies]
-requests = {version = ">=2.20", markers = "python_version >= \"3.0\""}
-typing-extensions = {version = ">=4.5.0", markers = "python_version >= \"3.7\""}
+requests = ">=2.20"
+typing_extensions = ">=4.7.0"
+
+[package.extras]
+async = ["httpx"]
 
 [[package]]
 name = "tavily-python"
@@ -8936,4 +8939,4 @@ cffi = ["cffi (>=1.17,<2.0) ; platform_python_implementation != \"PyPy\" and pyt
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<3.14"
-content-hash = "1a1dc6acb4de31cd15a67c84df2208a74de570b4273f2de9178e55bf125184ba"
+content-hash = "b80296b4a0e713ec261bcff7d42ed1ac7db6ca7e88460bc58e120d0727f39c94"
